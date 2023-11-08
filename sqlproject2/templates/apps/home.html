@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+<body>
+	<h1 style="color:red;text-align: center;">SYSTECH GROUP</h1>
+	<h2 style="color:blue;text-align: center;">PROFUCT INFORMATION</h2>
+	<table border='2' style="color:green;text-align: center;">
+		<thead>
+			<th>PRODUCT NO</th>
+			<th>PRODUCT NAME</th>
+			<th>PRODUCT PRICE</th>
+			<th>WARENTY</th>
+		</thead>
+{% for i in s%}
+<tr>
+	<td>{{i.pno}}</td>
+	<td>{{i.name}}</td>
+	<td>{{i.price}}</td>
+	<td>{{i.warenty}}</td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</center>
+</html>

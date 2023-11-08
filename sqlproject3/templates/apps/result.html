@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+	<body>
+		<h2>EMPLOYEE INFORMATION</h2>
+	<table border='2'>
+	<thead>
+		<th>ID NO</th>
+		<th>NAME</th>
+		<th>SALARY</th>
+		<th>EXPERIENCE</th>
+		<th>Actions</th>
+	</thead>
+{%for i in s%}
+<tr>
+	<td>{{i.eno}}</td>
+	<td>{{i.name}}</td>
+	<td>{{i.salary}}</td>
+	<td>{{i.exp}}</td>
+	<td><a href="/update/{{i.id}}">Update</a> | <a href="/delete/{{i.id}}"> Delete</a></td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</center>
+</html>
